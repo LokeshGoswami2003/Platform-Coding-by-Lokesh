@@ -7,7 +7,7 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] result = {-1,-1};
-        HashMap<Integer,Integer> map=new HashMap<Integer,Integer>();
+        HashMap<Integer,Integer> map=new HashMap<Integer,Integer>(); // to store no. at index to check with future elements
         for(int i=0;i<nums.length;i++){
             if(map.containsKey(target-nums[i])){
                 result[1]=i;
